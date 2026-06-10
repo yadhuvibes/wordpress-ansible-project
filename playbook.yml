@@ -1,0 +1,22 @@
+---
+- name: Configure WordPress Server
+
+  hosts: wordpress
+
+  become: yes
+
+  roles:
+
+    - mysql
+
+    - php
+
+    - nginx
+
+    - wordpress
+
+    - phpmyadmin
+
+    - sftp
+
+    - ssl
